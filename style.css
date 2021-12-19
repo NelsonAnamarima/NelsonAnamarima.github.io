@@ -7,7 +7,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: whitesmoke; }
 
-.fleximage {
+.fleximage, .lista, .interlineado, footer {
   display: flex; }
 
 .container-fluid iframe {
@@ -19,6 +19,7 @@ a {
   text-decoration: none; }
 
 img {
+  height: 70;
   width: 100%;
   margin-top: 1%;
   margin-bottom: 1%; }
@@ -26,7 +27,6 @@ img {
 .lista {
   list-style-type: none;
   margin: auto;
-  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
   .lista li ul {
@@ -34,7 +34,6 @@ img {
 
 .interlineado {
   line-height: 25px;
-  display: flex;
   flex-direction: column; }
 
 .products {
@@ -45,7 +44,6 @@ img {
 footer {
   font-family: 'Rubik', sans-serif;
   background-color: #cfcfcf;
-  display: flex;
   justify-content: center;
   margin-top: 1%; }
 
