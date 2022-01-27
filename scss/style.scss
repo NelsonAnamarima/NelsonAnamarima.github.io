@@ -6,6 +6,15 @@ body {
     background-color: $grisbg;
 }
 
+h1:after{
+    content: " ";
+    display: block;
+    background-color: $grisfooter;
+    height: 2px;
+    width: 40%;
+    margin: 20px auto;
+}
+
 .fleximage {
     display: flex;
 }
@@ -36,21 +45,9 @@ img {
 
 }
 
-
-.lista {
-    @extend .fleximage;
-    list-style-type: none;
-    margin: auto;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  
-    li ul{
-
-        align-content: center;
-    }
+.accordion {
+    margin-top: 1%;
 }
-
-
 .interlineado {
     @extend .fleximage;
     line-height: 25px;
@@ -63,18 +60,5 @@ img {
     justify-content:space-evenly;
 }
 
-footer {
-    min-height: 250px;
-    font-family: 'Rubik', sans-serif;
-    background-color: $grisfooter;
-    justify-content: center;
-    text-align: center;
-    margin-top: 1%;
-    padding-bottom: 1%;
-}
-
-.logofooter {
-    width: 320px; 
-}
-
+@import "footer";
 @import "mediaqueries";
